@@ -1,6 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -15,22 +12,21 @@ model User {
   createdAt DateTime @default(now())
   name      String   @unique
   email     String   @unique
-  password  String 
-  genre     String 
-
+  password  String
+  favGenre  String
 }
 
 model Path {
   id           Int    @id @default(autoincrement())
   locationFrom String
   locationTo   String
-  time         Int  
+  time         Int
 }
 
 model Music {
-  id         Int      @id @default(autoincrement())
-  albumName  String 
+  id         Int    @id @default(autoincrement())
+  albumName  String
   genre      String
-  artistName String 
-  duration   Int      
+  artistName String
+  duration   Int
 }
