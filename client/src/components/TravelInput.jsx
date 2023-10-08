@@ -8,10 +8,9 @@ const TravelInput = ({ onGenerateRoute }) => {
     const [fromMenuAnchor, setFromMenuAnchor] = useState(null);
     const [destinationMenuAnchor, setDestinationMenuAnchor] = useState(null);
 
-    const fromOptions = ["Option 1", "Option 2", "Option 3"]; 
-    const destinationOptions = ["Option A", "Option B", "Option C"];
+    const fromOptions = ["Newark Penn Station", "New York Penn Station", "Hoboken Terminal", "Secaucus Junction", "Trenton Transit Center", "Newark Broad Street Station", "Journal Square", "Princeton Junction", "Metropark", "Rahway", "Summit", "Morristown", "Montclair State University", "Wayne-Route 23 Transit Center", "Ridgewood", "Seaside Heights", "Atlantic City Rail Terminal", "Long Branch", "Princeton", "Bay Street (Montclair)", "North Elizabeth", "Aberdeen-Matawan", "South Amboy", "Linden", "Asbury Park"]; 
+    const destinationOptions = ["Newark Penn Station", "New York Penn Station", "Hoboken Terminal", "Secaucus Junction", "Trenton Transit Center", "Newark Broad Street Station", "Journal Square", "Princeton Junction", "Metropark", "Rahway", "Summit", "Morristown", "Montclair State University", "Wayne-Route 23 Transit Center", "Ridgewood", "Seaside Heights", "Atlantic City Rail Terminal", "Long Branch", "Princeton", "Bay Street (Montclair)", "North Elizabeth", "Aberdeen-Matawan", "South Amboy", "Linden", "Asbury Park"];
 
-    
     const handleFromMenuOpen = (event) => {
         setFromMenuAnchor(event.currentTarget);
     };

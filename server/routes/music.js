@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken')
 const { PrismaClient } = require('@prisma/client')
 const prisma = new PrismaClient()
 
-//No update method necessary, as frontend features a dropdown menu
+// No update method necessary, as frontend features a dropdown menu
 
 router.post('/', jsonParser, async(req,res) => {
 

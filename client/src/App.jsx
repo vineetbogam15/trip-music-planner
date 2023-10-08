@@ -24,7 +24,7 @@ function App() {
   };
 
   const calculateTravelTime = (from, destination) => {
-    return Math.floor(Math.random() * 60) + 1; // random travel time for now
+    return Math.floor(Math.random() * 80) + 40; // random travel time for now
   }
 
   return (
